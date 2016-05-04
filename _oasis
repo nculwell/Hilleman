@@ -1,1 +1,37 @@
+# What's the correct format number?
+OASISFormat: 1.0
 
+Name: Hilleman
+Version: 0.1
+Synopsis: Compiler.
+Description: Compiler.
+Authors: NCK
+Copyrights: NCK
+Maintainers: NCK
+LicenseFile: README.md
+
+# This should be DEP-5, I don't know what exactly needs to be here.
+License: https://github.com/nculwell/Hilleman/blob/master/README.md
+
+OCamlVersion: >=4.0
+
+# Dependencies on findlib packages, including internal findlib packages.
+BuildDepends:
+# Tools required to compile, including internal executables.
+BuildTools:
+
+
+Executable hill
+MainIs: hill.ml
+
+
+# Define VCS information. There are two special identified repositories:
+# head: identify the main development repository.
+# this: identify the repository at the state of the current version.
+
+SourceRepository head
+Type: git
+Location: https://github.com/nculwell/Hilleman
+Browser: true
+Branch: master
+Subdir: .
